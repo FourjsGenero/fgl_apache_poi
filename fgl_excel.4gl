@@ -1,4 +1,5 @@
 IMPORT JAVA java.io.FileOutputStream
+IMPORT JAVA java.io.FileInputStream
 
 IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFWorkbook
 IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFSheet
@@ -29,6 +30,17 @@ DEFINE fo FileOutputStream
     LET fo = FileOutputStream.create(filename)
     CALL w.write(fo)
     CALL fo.close()
+END FUNCTION
+
+
+FUNCTION workbook_open(filename)
+DEFINE filename STRING
+DEFINE fi FileInputStream
+DEFINE w workbookType
+
+    LET fi = FileInputStream.create(filename)
+    LET w = XSSFWorkbook.create(fi)
+    RETURN w
 END FUNCTION
 
 
