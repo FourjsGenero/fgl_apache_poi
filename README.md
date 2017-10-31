@@ -28,7 +28,7 @@ CLASSPATH=$(POI_HOME)/poi-3.10.1-20140818.jar;$(POI_HOME)/poi-ooxml-3.10.1-20140
 
 ### fgl_excel_test
 
-Create an Excel Document (fgl_excel_test).  Note the last line has date/time indicating the file has just been created
+Create an Excel Document (fgl_excel_test).  Note the last line has date/time indicating the file has just been created.  Also note the total line is a formula, not a value.
 
 ![Example Excel](https://user-images.githubusercontent.com/13615993/32205574-dded7afe-be54-11e7-9809-065ecc4f5b35.png)
 
