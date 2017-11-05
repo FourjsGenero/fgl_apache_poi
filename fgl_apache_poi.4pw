@@ -2,7 +2,6 @@
 <Project defaultApplication="989621642" gstVersion="30a07" version="3.2">
   <Settings>
     <DynamicProperties version="2">
-      <DynamicProperty description="Cordova plugins" editorInfo="isDynamic:true;title:Cordova;description:Cordova plugins;icon:checkbox_checked" initialValue="" isDefaultInherited="false" isHidden="false" label="Cordova Plugins" name="cordova" readOnly="false" type="MULTIPLEBOOLEAN"/>
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
       <DynamicProperty description="Action bar text color (Android 5.0 and later)" initialValue="#EBEBEB" isDefaultInherited="false" isHidden="false" label="Action bar text color" name="gma-actionbar-color" readOnly="false" type="COLOR"/>
       <DynamicProperty description="Cordova plugins" editorInfo="isDynamic:true;title:Cordova;description:Cordova plugins;icon:checkbox_checked" initialValue="" isDefaultInherited="false" isHidden="false" label="Cordova Plugins" name="gma-cordova" readOnly="false" type="MULTIPLEBOOLEAN"/>
@@ -56,7 +55,7 @@
       <DynamicPropertyGroup collapsed="false" description="iOS" label="iOS" name="iOSGroup" properties="launchScreen320x480;launchScreen640x960;launchScreen;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreen2048x2732;launchScreen2732x2048;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon167x167;icon180x180;required;gmi-cordova"/>
     </DynamicProperties>
     <NodeInfos version="1">
-      <NodeInfo mimeType="pm/package" properties="packageId;packageLabel;packageVersion;packageVersionName;launchScreen320x480;launchScreen640x960;launchScreen;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreen2048x2732;launchScreen2732x2048;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon167x167;icon180x180;gma-primary-color;gma-primary-dark-color;gma-accent-color;gma-actionbar-color;gma-primaryText-color;gma-windowBackground-color;gma-navigationBarBackground-color;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;status-icon-mdpi;status-icon-hdpi;status-icon-xhdpi;permissions;required;gma-cordova;gmi-cordova;cordova"/>
+      <NodeInfo mimeType="pm/package" properties="packageId;packageLabel;packageVersion;packageVersionName;launchScreen320x480;launchScreen640x960;launchScreen;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreen2048x2732;launchScreen2732x2048;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon167x167;icon180x180;gma-primary-color;gma-primary-dark-color;gma-accent-color;gma-actionbar-color;gma-primaryText-color;gma-windowBackground-color;gma-navigationBarBackground-color;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;status-icon-mdpi;status-icon-hdpi;status-icon-xhdpi;permissions;required;gma-cordova;gmi-cordova"/>
     </NodeInfos>
   </Settings>
   <LanguageList version="1.0"/>
@@ -66,7 +65,6 @@
       <Library binaryName="lib_apache_poi" id="806207675" label="lib_apache_poi">
         <File filePath="fgl_excel.4gl"/>
         <File filePath="fgl_word.4gl"/>
-        <File filePath="readme.txt"/>
       </Library>
     </Group>
     <Group label="test_program">
