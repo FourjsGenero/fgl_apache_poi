@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="989621642" gstVersion="30a07" version="3.2">
+<Project defaultApplication="1569057355" gstVersion="30a07" version="3.2">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -70,6 +70,11 @@
     <Group label="test_program">
       <Application binaryName="fgl_excel_calculation" id="419929947" label="fgl_excel_calculation">
         <File filePath="fgl_excel_calculation_test.4gl"/>
+      </Application>
+      <Application binaryName="fgl_excel_generic_test" environment="value:DBDATE=DMY4/" id="1569057355" label="fgl_excel_generic_test">
+        <File filePath="fgl_excel_generic_test.4gl"/>
+        <File filePath="fgl_excel_generic_test.per"/>
+        <File filePath="fgl_excel_generic_test.xlsx"/>
       </Application>
       <Application binaryName="fgl_excel_import_test" id="989621642" label="fgl_excel_import_test">
         <File filePath="fgl_excel_import_test.4gl"/>

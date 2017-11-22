@@ -1,0 +1,17 @@
+LAYOUT (TEXT="Generic SQL to Excel")
+GRID
+{
+SQL      [f01                                                                  ]
+         [                                                                     ]
+         [                                                                     ]
+Filename [f02                   ]
+Preview  [f03]
+Headers  [f04]
+}
+END
+END
+ATTRIBUTES
+TEXTEDIT f01 = formonly.sql, WANTNORETURNS;
+EDIT f02 = formonly.filename, SCROLL;
+CHECKBOX f03 = formonly.preview, VALUECHECKED=TRUE, VALUEUNCHECKED=FALSE, NOT NULL;
+CHECKBOX f04 = formonly.header, VALUECHECKED=TRUE, VALUEUNCHECKED=FALSE, NOT NULL;

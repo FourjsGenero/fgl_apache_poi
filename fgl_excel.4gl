@@ -65,6 +65,23 @@ END FUNCTION
 
 
 
+FUNCTION sheet_autosizecolumn(s, c)
+DEFINE s sheetType
+DEFINE c INTEGER
+
+    CALL s.autoSizeColumn(c)
+END FUNCTION
+
+FUNCTION sheet_columnwidth_set(s, c, w)
+DEFINE s sheetType
+DEFINE c INTEGER
+DEFINE w INTEGER
+
+    CALL s.setColumnWidth(c,w)
+END FUNCTION
+
+
+
 FUNCTION row_createcell(r,idx)
 DEFINE r rowType
 DEFINE idx INTEGER
