@@ -46,3 +46,8 @@ Illustrates how an Excel document can be created in memory and you can use the E
 ### fgl_excel_import
 
 Illustrates how you can read an existing Excel spreadsheet
+
+
+### fgl_excel_generic_test
+
+Illustrates the use of a function that can take as input a SQL clause, and generate a spreadsheet containing an unload of that data.  Combines base.SqlHandle with the ApachePOI classes
