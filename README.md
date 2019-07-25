@@ -19,7 +19,7 @@ in the same node.
 
 Currently I use the value ...
 ``
-CLASSPATH=$(POI_HOME)/poi-3.10.1-20140818.jar;$(POI_HOME)/poi-ooxml-3.10.1-20140818.jar;$(POI_HOME)/poi-ooxml-schemas-3.10.1-20140818.jar;$(POI_HOME)/ooxml-lib/dom4j-1.6.1.jar;$(POI_HOME)/ooxml-lib/xmlbeans-2.6.0.jar;$(CLASSPATH)
+$(POI_HOME)/poi-4.1.0.jar;$(POI_HOME)/poi-ooxml-4.1.0.jar;$(POI_HOME)/poi-ooxml-schemas-4.1.0.jar;$(POI_HOME)/ooxml-lib/curvesapi-1.06.jar;$(POI_HOME)/ooxml-lib/xmlbeans-3.1.0.jar;$(POI_HOME)/lib/commons-collections4-4.3.jar;$(POI_HOME)/lib/commons-compress-1.18.jar;$(POI_HOME)/lib/commons-math3-3.6.1.jar;$(CLASSPATH)
 ``
 ... and as you can see, there is some versioning in the filenames.
 
