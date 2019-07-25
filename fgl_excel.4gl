@@ -1,20 +1,23 @@
 IMPORT JAVA java.io.FileOutputStream
 IMPORT JAVA java.io.FileInputStream
 
+
 IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFWorkbook
 IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFSheet
-IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFRow
-IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFCell
-IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFCellStyle
-IMPORT JAVA org.apache.poi.xssf.usermodel.XSSFFont
+IMPORT JAVA org.apache.poi.ss.usermodel.Row
+IMPORT JAVA org.apache.poi.ss.usermodel.Cell
+IMPORT JAVA org.apache.poi.ss.usermodel.CellStyle
+IMPORT JAVA org.apache.poi.ss.usermodel.HorizontalAlignment
+IMPORT JAVA org.apache.poi.ss.usermodel.Font
+
 
 
 PUBLIC TYPE workbookType XSSFWorkbook
 PUBLIC TYPE sheetType XSSFSheet
-PUBLIC TYPE rowType XSSFRow
-PUBLIC TYPE cellType XSSFCell
-PUBLIC TYPE cellStyleType XSSFCellStyle
-PUBLIC TYPE fontType XSSFFont
+PUBLIC TYPE rowType Row
+PUBLIC TYPE cellType Cell
+PUBLIC TYPE cellStyleType CellStyle
+PUBLIC TYPE fontType Font
 
 FUNCTION workbook_create()
     RETURN XSSFWorkbook.create()
@@ -104,7 +107,7 @@ END FUNCTION
 FUNCTION cell_number_set(c, v)
 DEFINE c cellType
 DEFINE v FLOAT
-    CALL c.setCellType(XSSFCell.CELL_TYPE_NUMERIC)
+  
     CALL c.setCellValue(v)
 END FUNCTION
 
@@ -113,7 +116,6 @@ END FUNCTION
 FUNCTION cell_formula_set(c, v)
 DEFINE c cellType
 DEFINE v STRING
-    CALL c.setCellType(XSSFCell.CELL_TYPE_FORMULA)
     CALL c.setCellFormula(v)
 END FUNCTION
 
@@ -157,9 +159,9 @@ DEFINE v STRING
 
     CASE 
         WHEN a="weight" AND v="bold"
-            CALL f.setBoldweight(XSSFFont.BOLDWEIGHT_BOLD)
+            CALL f.setBold(true)
         WHEN a="weight" AND v="normal"
-            CALL f.setBoldweight(XSSFFont.BOLDWEIGHT_NORMAL)
+            CALL f.setBold(false)
         -- add more as required
     END CASE
 END FUNCTION
@@ -182,15 +184,20 @@ DEFINE v STRING
 
     CASE 
         WHEN a="alignment" AND v="center"
-            CALL s.setAlignment(XSSFCellStyle.ALIGN_CENTER)
+            CALL s.setAlignment(HorizontalAlignment.CENTER)
+            
         WHEN a="alignment" AND v="left"
-            CALL s.setAlignment(XSSFCellStyle.ALIGN_LEFT)
+            CALL s.setAlignment(HorizontalAlignment.LEFT)
+
         WHEN a="alignment" AND v="right"
-            CALL s.setAlignment(XSSFCellStyle.ALIGN_RIGHT)
+            CALL s.setAlignment(HorizontalAlignment.RIGHT)
+
         WHEN a="alignment" AND v="justify"
-            CALL s.setAlignment(XSSFCellStyle.ALIGN_JUSTIFY)
+            CALL s.setAlignment(HorizontalAlignment.JUSTIFY)
+
         WHEN a="alignment" AND v="general"
-            CALL s.setAlignment(XSSFCellStyle.ALIGN_GENERAL)
+            CALL s.setAlignment(HorizontalAlignment.GENERAL)
+
         -- add more as required
     END CASE
 END FUNCTION

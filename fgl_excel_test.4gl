@@ -48,6 +48,7 @@ DEFINE result INTEGER
 
         CALL fgl_excel.row_createcell(row, column2row("B")) RETURNING cell
         CALL fgl_excel.cell_number_set(cell,util.math.rand(100))
+
         #CALL cell.
     END FOR
 
