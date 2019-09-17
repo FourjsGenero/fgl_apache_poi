@@ -44,11 +44,8 @@ DEFINE result BOOLEAN
 END MAIN
 
 
-FUNCTION sql_to_excel(sql, filename, header)
+FUNCTION sql_to_excel(sql STRING, filename STRING, header BOOLEAN) RETURNS BOOLEAN
 DEFINE hdl base.SqlHandle
-DEFINE sql STRING
-DEFINE filename STRING
-DEFINE header BOOLEAN
 DEFINE row_idx, col_idx INTEGER 
 
 DEFINE workbook     fgl_excel.workbookType 
