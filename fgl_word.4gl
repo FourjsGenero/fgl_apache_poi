@@ -1,87 +1,78 @@
 IMPORT JAVA java.io.FileOutputStream
 
-
 IMPORT JAVA org.apache.poi.xwpf.usermodel.XWPFDocument
 IMPORT JAVA org.apache.poi.xwpf.usermodel.XWPFParagraph
 IMPORT JAVA org.apache.poi.xwpf.usermodel.XWPFRun
 IMPORT JAVA org.apache.poi.xwpf.usermodel.XWPFStyle
 
-PUBLIC TYPE documentType XWPFDocument
-PUBLIC TYPE paragraphType XWPFParagraph
-PUBLIC TYPE runType XWPFRun
+PUBLIC TYPE documentType RECORD
+    j_document XWPFDocument
+END RECORD
+
+PUBLIC TYPE paragraphType RECORD
+    j_paragraph XWPFParagraph
+END RECORD
+
+PUBLIC TYPE runType RECORD
+    j_run XWPFRun
+END RECORD
+
 PUBLIC TYPE styleType XWPFStyle
 
 
 
-FUNCTION document_create()
-    RETURN XWPFDocument.create()
+FUNCTION document_create() RETURNS documentType
+DEFINE d documentType
+
+    LET d.j_document = XWPFDocument.create()
+    RETURN d.*
 END FUNCTION
 
 
 
-FUNCTION document_paragraph_create(d)
-DEFINE d documentType
-DEFINE p paragraphType
+FUNCTION (this documentType) paragraph_create() RETURNS XWPFParagraph
+DEFINE p XWPFParagraph
 
-    LET p= d.createParagraph()
+    LET p = this.j_document.createParagraph()
     RETURN p
 END FUNCTION
 
+FUNCTION (this paragraphType) run_create() RETURNS XWPFRun
+DEFINE r XWPFRun
 
-
-FUNCTION paragraph_run_create(p)
-DEFINE p paragraphType
-DEFINE r runType
-
-    LET r = p.createRun()
+    LET r = this.j_paragraph.createRun()
     RETURN r
 END FUNCTION
 
 
 
-FUNCTION run_text_set(r, t)
-DEFINE r runType
-DEFINE t STRING
-
-    CALL r.setText(t)
-END FUNCTION
-
-
-FUNCTION run_break(r)
-DEFINE r runType
-
-    CALL r.addBreak()
-END FUNCTION
-
-FUNCTION run_bold_set(r, b)
-DEFINE r runType
-DEFINE b BOOLEAN
-    IF b THEN
-        CALL r.setBold(TRUE)
-    ELSE
-        CALL r.setBold(FALSE)
-    END IF
-END FUNCTION
-
-FUNCTION run_italic_set(r, b)
-DEFINE r runType
-DEFINE b BOOLEAN
-    IF b THEN
-        CALL r.setItalic(TRUE)
-    ELSE
-        CALL r.setItalic(FALSE)
-    END IF
+FUNCTION (this runType) text_set(t STRING) RETURNS ()
+    CALL this.j_run.setText(t)
 END FUNCTION
 
 
 
 
-FUNCTION document_write(d, filename)
-DEFINE d documentType
-DEFINE filename STRING
+FUNCTION (this runType) break() RETURNS ()
+    CALL this.j_run.addBreak()
+END FUNCTION
+
+
+
+FUNCTION (this runType) bold_set(b BOOLEAN) RETURNS ()
+    CALL this.j_run.setBold(b)
+END FUNCTION
+
+FUNCTION (this runType) italic_set(i BOOLEAN) RETURNS ()
+    CALL this.j_run.setItalic(i)
+END FUNCTION
+
+
+
+FUNCTION (this documentType) write(filename STRING) RETURNS ()
 DEFINE fo FileOutputStream
 
     LET fo = FileOutputStream.create(filename)
-    CALL d.write(fo)
+    CALL this.j_document.write(fo)
     CALL fo.close()
 END FUNCTION
