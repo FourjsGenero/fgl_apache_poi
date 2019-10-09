@@ -51,3 +51,7 @@ Illustrates how you can read an existing Excel spreadsheet
 ### fgl_excel_generic_test
 
 Illustrates the use of a function that can take as input a SQL clause, and generate a spreadsheet containing an unload of that data.  Combines base.SqlHandle with the ApachePOI classes
+
+## Other Notes
+
+Have a look at http://poi.apache.org/components/spreadsheet/quick-guide.html#DataFormats for examples of methods will need to add to do certain things in Excel
