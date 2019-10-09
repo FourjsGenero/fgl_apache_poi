@@ -75,12 +75,14 @@ DEFINE c INTEGER
     CALL s.autoSizeColumn(c)
 END FUNCTION
 
-FUNCTION sheet_columnwidth_set(s, c, w)
+FUNCTION sheet_columnwidth_set(s, c, wf)
 DEFINE s sheetType
 DEFINE c INTEGER
-DEFINE w INTEGER
+DEFINE wf FLOAT
+DEFINE wi INTEGER
 
-    CALL s.setColumnWidth(c,w)
+    LET wi = 256.0*wf
+    CALL s.setColumnWidth(c,wi)
 END FUNCTION
 
 
