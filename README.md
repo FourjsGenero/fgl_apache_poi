@@ -5,6 +5,8 @@
 This example program wraps the Java Apache POI libraries in 4gl libraries
 so that they can be called by a 4gl programmer.
 
+The Apache POI libraries are used to interact with Word and Excel documents.  They also include some of the functions that are available inside Excel including financial functions.
+
 ## Usage
 
 You will need to download the Java Apache POI libraries from:
@@ -51,6 +53,10 @@ Illustrates how you can read an existing Excel spreadsheet
 ### fgl_excel_generic_test
 
 Illustrates the use of a function that can take as input a SQL clause, and generate a spreadsheet containing an unload of that data.  Combines base.SqlHandle with the ApachePOI classes
+
+### fgl_financial_test
+
+Illustrates the use of the financial methods (NPV, IRR) etc that are available.  Note also inside fgl_financial the use of JAVA arrays to pass a list of payments
 
 ## Other Notes
 
