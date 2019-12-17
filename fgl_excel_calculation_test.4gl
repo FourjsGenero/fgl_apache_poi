@@ -7,7 +7,7 @@ DEFINE row          fgl_excel.rowType
 DEFINE cell         fgl_excel.cellType 
 
 DEFINE i INTEGER
-   
+    
     -- create workbook
     CALL fgl_excel.workbook_create() RETURNING workbook
 

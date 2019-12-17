@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="419929947" gstVersion="31408" version="3.3">
+<Project defaultApplication="163524075" gstVersion="31408" version="3.3">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -68,6 +68,7 @@
     <Group id="710725120" label="java_wrapper">
       <Library binaryName="lib_apache_poi" id="806207675" label="lib_apache_poi">
         <File filePath="fgl_excel.4gl"/>
+        <File filePath="fgl_financial.4gl"/>
         <File filePath="fgl_word.4gl"/>
       </Library>
     </Group>
@@ -86,6 +87,9 @@
       <Application binaryName="fgl_excel_test" dependencies="806207675" id="163524075" label="fgl_excel_test">
         <File filePath="fgl_excel_test.4gl"/>
         <File filePath="fgl_excel_test.xlsx"/>
+      </Application>
+      <Application binaryName="fgl_financial_test" id="-1141558460" label="fgl_financial_test">
+        <File filePath="fgl_financial_test.4gl"/>
       </Application>
       <Application binaryName="fgl_word_test" id="-582830611" label="fgl_word_test">
         <File filePath="fgl_word_test.4gl"/>
