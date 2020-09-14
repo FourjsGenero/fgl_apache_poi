@@ -58,6 +58,10 @@ Illustrates the use of a function that can take as input a SQL clause, and gener
 
 Illustrates the use of the financial methods (NPV, IRR) etc that are available.  Note also inside fgl_financial the use of JAVA arrays to pass a list of payments
 
+### fgl_excel_fit_to_page
+
+Illustrates how you can fit to page an existing spreadsheet.  It takes two arguments, an existing filename and a new filename, and will save the existing file using the new filename having modified it to fit to 1 page.  With the example, fgl_excel_fit_to_page.xlsx is the original, fgl_excel_fit_to_page2.xlsx has been modified to print to 1x1 page, to verify go File->Print and note the appearance in the preview.
+
 ## Other Notes
 
 Have a look at http://poi.apache.org/components/spreadsheet/quick-guide.html#DataFormats for examples of methods will need to add to do certain things in Excel
