@@ -9,6 +9,7 @@ IMPORT JAVA org.apache.poi.ss.usermodel.Cell
 IMPORT JAVA org.apache.poi.ss.usermodel.CellStyle
 IMPORT JAVA org.apache.poi.ss.usermodel.HorizontalAlignment
 IMPORT JAVA org.apache.poi.ss.usermodel.Font
+IMPORT JAVA org.apache.poi.ss.usermodel.PrintSetup
 
 
 
@@ -217,5 +218,20 @@ DEFINE f fontType
 END FUNCTION
 
 
+FUNCTION workbook_fit_to_page(old_filename STRING, new_filename STRING)
+DEFINE w workbookType
+DEFINE s sheetType
 
+DEFINE ps PrintSetup
+CONSTANT SHORT_ONE SMALLINT = 1
 
+    LET w = workbook_open(old_filename)
+    LET s = w.getSheetAt(0)
+    CALL s.setFitToPage(true)
+    CALL s.setAutobreaks(true)
+    LET ps = s.getPrintSetup()
+    CALL ps.setFitWidth(SHORT_ONE)
+    CALL ps.setFitHeight(SHORT_ONE)
+
+    CALL workbook_writeToFile(w, new_filename)
+END FUNCTION
