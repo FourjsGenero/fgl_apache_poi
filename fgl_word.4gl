@@ -30,18 +30,18 @@ END FUNCTION
 
 
 
-FUNCTION (this documentType) paragraph_create() RETURNS XWPFParagraph
-DEFINE p XWPFParagraph
+FUNCTION (this documentType) paragraph_create() RETURNS paragraphType
+DEFINE p paragraphType
 
-    LET p = this.j_document.createParagraph()
-    RETURN p
+    LET p.j_paragraph = this.j_document.createParagraph()
+    RETURN p.*
 END FUNCTION
 
-FUNCTION (this paragraphType) run_create() RETURNS XWPFRun
-DEFINE r XWPFRun
+FUNCTION (this paragraphType) run_create() RETURNS runType
+DEFINE r runType
 
-    LET r = this.j_paragraph.createRun()
-    RETURN r
+    LET r.j_run = this.j_paragraph.createRun()
+    RETURN r.*
 END FUNCTION
 
 
