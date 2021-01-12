@@ -81,7 +81,7 @@ DEFINE result INTEGER
 
     CALL fgl_excel.sheet_createrow(sheet, i+1) RETURNING row
     CALL fgl_excel.row_createcell(row, column2row("A")) RETURNING cell
-    CALL fgl_excel.cell_value_set(cell,SFMT("This document created on %1 at %2", TODAY, CURRENT HOUR TO SECOND))
+    CALL fgl_excel.cell_value_set(cell,SFMT("This document created on %1 at %2 by fgl_excel_test.4gl", TODAY, CURRENT HOUR TO SECOND))
 
     -- Write to File
     CALL fgl_excel.workbook_writeToFile(workbook, "fgl_excel_test.xlsx");

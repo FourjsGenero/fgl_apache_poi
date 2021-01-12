@@ -37,7 +37,7 @@ DEFINE run          fgl_word.runType
 
     CALL document.paragraph_create() RETURNING paragraph.*
     CALL paragraph.run_create() RETURNING run.*
-    CALL run.text_set(SFMT("This document created on %1 at %2", TODAY, CURRENT HOUR TO SECOND))
+    CALL run.text_set(SFMT("This document created on %1 at %2 by fgl_word_test.4gl", TODAY, CURRENT HOUR TO SECOND))
     
     CALL document.write("fgl_word_test.docx")
 END MAIN
