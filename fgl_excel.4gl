@@ -11,6 +11,11 @@ IMPORT JAVA org.apache.poi.ss.usermodel.HorizontalAlignment
 IMPORT JAVA org.apache.poi.ss.usermodel.Font
 IMPORT JAVA org.apache.poi.ss.usermodel.PrintSetup
 
+IMPORT JAVA org.apache.poi.ss.util.CellUtil
+IMPORT JAVA org.apache.poi.ss.usermodel.IndexedColors
+IMPORT JAVA org.apache.poi.ss.usermodel.BorderStyle
+IMPORT JAVA java.util.HashMap
+IMPORT JAVA java.lang.Integer
 
 
 
@@ -24,7 +29,7 @@ PUBLIC TYPE fontType Font
 
 
 
-FUNCTION workbook_create()
+FUNCTION workbook_create() RETURNS workbookType
     RETURN XSSFWorkbook.create()
 END FUNCTION
 
@@ -41,7 +46,7 @@ DEFINE fo FileOutputStream
 END FUNCTION
 
 
-FUNCTION workbook_open(filename)
+FUNCTION workbook_open(filename) RETURNS workbookType
 DEFINE filename STRING
 DEFINE fi FileInputStream
 DEFINE w workbookType
@@ -53,7 +58,7 @@ END FUNCTION
 
 
 
-FUNCTION workbook_createsheet(w)
+FUNCTION workbook_createsheet(w) RETURNS sheetType
 DEFINE w workbookType
 DEFINE s sheetType
 
@@ -63,7 +68,7 @@ END FUNCTION
 
 
 
-FUNCTION sheet_createrow(s,idx)
+FUNCTION sheet_createrow(s,idx) RETURNS rowType
 DEFINE s sheetType
 DEFINE idx INTEGER
 DEFINE r rowType
@@ -92,7 +97,7 @@ END FUNCTION
 
 
 
-FUNCTION row_createcell(r,idx)
+FUNCTION row_createcell(r,idx) RETURNS cellType
 DEFINE r rowType
 DEFINE idx INTEGER
 DEFINE c cellType
@@ -150,9 +155,7 @@ DEFINE s cellStyleType
     CALL c.setCellStyle(s)
 END FUNCTION
 
-
-
-FUNCTION font_create(w)
+FUNCTION font_create(w) RETURNS fontType
 DEFINE w workBookType
 DEFINE f fontType
     LET f = w.createFont()
@@ -175,7 +178,7 @@ END FUNCTION
 
 
 
-FUNCTION style_create(w)
+FUNCTION style_create(w) RETURNS cellStyleType
 DEFINE w workBookType
 DEFINE s cellStyleType
     LET s = w.createCellStyle()
@@ -234,4 +237,26 @@ CONSTANT SHORT_ONE SMALLINT = 1
     CALL ps.setFitHeight(SHORT_ONE)
 
     CALL workbook_writeToFile(w, new_filename)
+END FUNCTION
+
+
+
+FUNCTION cellutil_set_cell_property_experiment(c cellType)
+
+DEFINE h  java.util.HashMap 
+
+    LET h = java.util.HashMap.create()
+   #CALL h.put( CellUtil.FILL_BACKGROUND_COLOR, java.lang.Integer.create(IndexedColors.RED.index))
+   #CALL h.put( CellUtil.FILL_FOREGROUND_COLOR, java.lang.Integer.create(IndexedColors.BLUE.index))
+
+    CALL h.put(CellUtil.BORDER_TOP, BorderStyle.MEDIUM)
+    CALL h.put(CellUtil.BORDER_BOTTOM, BorderStyle.MEDIUM)
+    CALL h.put(CellUtil.BORDER_LEFT, BorderStyle.MEDIUM)
+    CALL h.put(CellUtil.BORDER_RIGHT, BorderStyle.MEDIUM)
+    CALL h.put(CellUtil.TOP_BORDER_COLOR, java.lang.Integer.create(IndexedColors.RED.getIndex()))
+    CALL h.put(CellUtil.BOTTOM_BORDER_COLOR, java.lang.Integer.create(IndexedColors.BLUE.getIndex()))
+    CALL h.put(CellUtil.LEFT_BORDER_COLOR, java.lang.Integer.create(IndexedColors.YELLOW.getIndex()))
+    CALL h.put(CellUtil.RIGHT_BORDER_COLOR, java.lang.Integer.create(IndexedColors.GREEN.getIndex()))
+    
+    CALL CellUtil.setCellStyleProperties(c, h)
 END FUNCTION

@@ -11,8 +11,6 @@ DEFINE header_font  fgl_excel.fontType
 
 DEFINE i INTEGER
 
-DEFINE result INTEGER
-
     -- create workbook
     CALL fgl_excel.workbook_create() RETURNING workbook
 
@@ -81,7 +79,10 @@ DEFINE result INTEGER
 
     CALL fgl_excel.sheet_createrow(sheet, i+1) RETURNING row
     CALL fgl_excel.row_createcell(row, column2row("A")) RETURNING cell
+    
     CALL fgl_excel.cell_value_set(cell,SFMT("This document created on %1 at %2 by fgl_excel_test.4gl", TODAY, CURRENT HOUR TO SECOND))
+
+    CALL fgl_excel.cellutil_set_cell_property_experiment(cell)
 
     -- Write to File
     CALL fgl_excel.workbook_writeToFile(workbook, "fgl_excel_test.xlsx");
