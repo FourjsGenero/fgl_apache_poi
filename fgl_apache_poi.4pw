@@ -99,7 +99,7 @@
       <Application binaryName="fgl_excel_test" dependencies="806207675" id="163524075" label="fgl_excel_test">
         <Configuration id="-1933405794" label="fgl_excel_test"/>
         <File filePath="fgl_excel_test.4gl"/>
-        <File filePath="fgl_excel_test.xlsx"/>
+        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_excel_test.xlsx"/>
       </Application>
       <Application binaryName="fgl_financial_test" id="-1141558460" label="fgl_financial_test">
         <Configuration id="413242747" label="fgl_financial_test"/>
@@ -108,7 +108,7 @@
       <Application binaryName="fgl_word_test" id="-824915288" label="fgl_word_test">
         <Configuration id="-212500090" label="fgl_word_test"/>
         <File filePath="fgl_word_test.4gl"/>
-        <File filePath="fgl_word_test.docx"/>
+        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_word_test.docx"/>
       </Application>
     </Group>
     <Group id="-1511700679" label="zz_java_test">
