@@ -1,5 +1,9 @@
 IMPORT JAVA java.io.FileOutputStream
 
+# for export to PDF, need to find appropriate jar.  Despite note not in ApachePOI
+#import java org.apache.poi.xwpf.converter.pdf.PdfConverter
+#import java org.apache.poi.xwpf.converter.pdf.PdfOptions
+
 IMPORT JAVA org.apache.poi.xwpf.usermodel.XWPFDocument
 IMPORT JAVA org.apache.poi.xwpf.usermodel.XWPFParagraph
 IMPORT JAVA org.apache.poi.xwpf.usermodel.XWPFRun

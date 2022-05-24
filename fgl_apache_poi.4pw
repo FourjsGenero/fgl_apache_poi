@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="-212500090" gstVersion="40003" version="3.4">
+<Project defaultApplication="-701060086" gstVersion="40100" version="3.4">
   <Settings>
     <DynamicProperties version="4">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -50,7 +50,7 @@
       <DynamicProperty description="Label of the package" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="packageLabel" readOnly="false" type="TEXT"/>
       <DynamicProperty description="Version of the package" initialValue="1" isDefaultInherited="false" isHidden="false" label="Version" name="packageVersion" readOnly="false" type="TEXT"/>
       <DynamicProperty description="Version of the package displayed to the user" initialValue="1" isDefaultInherited="false" isHidden="false" label="VersionName" name="packageVersionName" readOnly="false" type="TEXT"/>
-      <DynamicProperty editorInfo="title:Permissions;description:Android permissions;icon:checkbox_checked;contains:ACCEPT_HANDOVER|ACCESS_BACKGROUND_LOCATION|ACCESS_CHECKIN_PROPERTIES|ACCESS_COARSE_LOCATION|ACCESS_FINE_LOCATION|ACCESS_LOCATION_EXTRA_COMMANDS|ACCESS_MEDIA_LOCATION|ACCESS_NETWORK_STATE|ACCESS_NOTIFICATION_POLICY|ACCESS_WIFI_STATE|ACCOUNT_MANAGER|ADD_VOICEMAIL|ANSWER_PHONE_CALLS|BATTERY_STATS|BIND_ACCESSIBILITY_SERVICE|BIND_APPWIDGET|BIND_AUTOFILL_SERVICE|BIND_CARRIER_MESSAGING_SERVICE|BIND_CARRIER_SERVICES|BIND_CHOOSER_TARGET_SERVICE|BIND_CONDITION_PROVIDER_SERVICE|BIND_DEVICE_ADMIN|BIND_DREAM_SERVICE|BIND_INCALL_SERVICE|BIND_INPUT_METHOD|BIND_MIDI_DEVICE_SERVICE|BIND_NFC_SERVICE|BIND_NOTIFICATION_LISTENER_SERVICE|BIND_QUICK_SETTINGS_TILE|BIND_PRINT_SERVICE|BIND_REMOTEVIEWS|BIND_SLICE|BIND_SCREENING_SERVICE|BIND_TELECOM_CONNECTION_SERVICE|BIND_TEXT_SERVICE|BIND_TV_INPUT|BIND_VISUAL_VOICEMAIL_SERVICE|BIND_VOICE_INTERACTION|BIND_VPN_SERVICE|BIND_VR_LISTENER_SERVICE|BIND_WALLPAPER|BLUETOOTH|BLUETOOTH_ADMIN|BLUETOOTH_PRIVILEGED|BODY_SENSORS|BROADCAST_PACKAGE_REMOVED|BROADCAST_SMS|BROADCAST_STICKY|BROADCAST_WAP_PUSH|C2DM_RECEIVE|C2D_MESSAGE|CALL_PHONE|CALL_PRIVILEGED|CAMERA|CAPTURE_AUDIO_OUTPUT|CAPTURE_SECURE_VIDEO_OUTPUT|CAPTURE_VIDEO_OUTPUT|CHANGE_COMPONENT_ENABLED_STATE|CHANGE_CONFIGURATION|CHANGE_NETWORK_STATE|CHANGE_WIFI_MULTICAST_STATE|CHANGE_WIFI_STATE|CLEAR_APP_CACHE|CONTROL_LOCATION_UPDATES|DELETE_CACHE_FILES|DELETE_PACKAGES|DIAGNOSTIC|DISABLE_KEYGUARD|DUMP|EXPAND_STATUS_BAR|FACTORY_TEST|GET_ACCOUNTS|GET_ACCOUNTS_PRIVILEGED|GET_PACKAGE_SIZE|GET_TASKS|GLOBAL_SEARCH|INSTALL_LOCATION_PROVIDER|INSTALL_PACKAGES|INSTALL_SHORTCUT|INSTANT_APP_FOREGROUND_SERVICE|INTERNET|KILL_BACKGROUND_PROCESSES|LOCATION_HARDWARE|MANAGE_DOCUMENTS|MANAGE_OWN_CALLS|MASTER_CLEAR|MEDIA_CONTENT_CONTROL|MODIFY_AUDIO_SETTINGS|MODIFY_PHONE_STATE|MOUNT_FORMAT_FILESYSTEMS|MOUNT_UNMOUNT_FILESYSTEMS|NFC|NFC_TRANSACTION_EVENT|PACKAGE_USAGE_STATS|PERSISTENT_ACTIVITY|PROCESS_OUTGOING_CALLS|READ_CALENDAR|READ_CALL_LOG|READ_CONTACTS|READ_EXTERNAL_STORAGE|READ_FRAME_BUFFER|READ_INPUT_STATE|READ_LOGS|READ_PHONE_NUMBER|READ_PHONE_NUMBERS|READ_PHONE_STATE|READ_SMS|READ_SYNC_SETTINGS|READ_SYNC_STATS|READ_VOICEMAIL|REBOOT|RECEIVE_BOOT_COMPLETED|RECEIVE_MMS|RECEIVE_SMS|RECEIVE_WAP_PUSH|RECORD_AUDIO|REORDER_TASKS|REQUEST_COMPANION_RUN_IN_BACKGROUND|REQUEST_COMPANION_USE_DATA_IN_BACKGROUND|REQUEST_DELETE_PACKAGES|REQUEST_IGNORE_BATTERY_OPTIMIZATIONS|REQUEST_INSTALL_PACKAGES|RESTART_PACKAGES|SEND_RESPOND_VIA_MESSAGE|SEND_SMS|SET_ALARM|SET_ALWAYS_FINISH|SET_ANIMATION_SCALE|SET_DEBUG_APP|SET_PREFERRED_APPLICATIONS|SET_PROCESS_LIMIT|SET_TIME|SET_TIME_ZONE|SET_WALLPAPER|SET_WALLPAPER_HINTS|SIGNAL_PERSISTENT_PROCESSES|STATUS_BAR|SYSTEM_ALERT_WINDOW|TRANSMIT_IR|UNINSTALL_SHORTCUT|UPDATE_DEVICE_STATS|USE_FINGERPRINT|USE_SIP|VIBRATE|WAKE_LOCK|WRITE_APN_SETTINGS|WRITE_CALENDAR|WRITE_CALL_LOG|WRITE_CONTACTS|WRITE_EXTERNAL_STORAGE|WRITE_GSERVICES|WRITE_SECURE_SETTINGS|WRITE_SETTINGS|WRITE_SYNC_SETTINGS|WRITE_VOICEMAIL" initialValue="ACCESS_NETWORK_STATE||ACCESS_WIFI_STATE||CHANGE_NETWORK_STATE||INSTALL_SHORTCUT||INTERNET||MOUNT_FORMAT_FILESYSTEMS||READ_LOGS" isDefaultInherited="false" isHidden="false" label="Permissions" name="permissions" readOnly="false" type="MULTIPLEBOOLEAN"/>
+      <DynamicProperty editorInfo="title:Permissions;description:Android permissions;icon:checkbox_checked;contains:ACCEPT_HANDOVER|ACCESS_BACKGROUND_LOCATION|ACCESS_CHECKIN_PROPERTIES|ACCESS_COARSE_LOCATION|ACCESS_FINE_LOCATION|ACCESS_LOCATION_EXTRA_COMMANDS|ACCESS_MEDIA_LOCATION|ACCESS_NETWORK_STATE|ACCESS_NOTIFICATION_POLICY|ACCESS_WIFI_STATE|ACCOUNT_MANAGER|ADD_VOICEMAIL|ANSWER_PHONE_CALLS|BATTERY_STATS|BIND_ACCESSIBILITY_SERVICE|BIND_APPWIDGET|BIND_AUTOFILL_SERVICE|BIND_CARRIER_MESSAGING_SERVICE|BIND_CARRIER_SERVICES|BIND_CHOOSER_TARGET_SERVICE|BIND_CONDITION_PROVIDER_SERVICE|BIND_DEVICE_ADMIN|BIND_DREAM_SERVICE|BIND_INCALL_SERVICE|BIND_INPUT_METHOD|BIND_MIDI_DEVICE_SERVICE|BIND_NFC_SERVICE|BIND_NOTIFICATION_LISTENER_SERVICE|BIND_QUICK_SETTINGS_TILE|BIND_PRINT_SERVICE|BIND_REMOTEVIEWS|BIND_SLICE|BIND_SCREENING_SERVICE|BIND_TELECOM_CONNECTION_SERVICE|BIND_TEXT_SERVICE|BIND_TV_INPUT|BIND_VISUAL_VOICEMAIL_SERVICE|BIND_VOICE_INTERACTION|BIND_VPN_SERVICE|BIND_VR_LISTENER_SERVICE|BIND_WALLPAPER|BLUETOOTH|BLUETOOTH_ADMIN|BLUETOOTH_PRIVILEGED|BODY_SENSORS|BROADCAST_PACKAGE_REMOVED|BROADCAST_SMS|BROADCAST_STICKY|BROADCAST_WAP_PUSH|C2DM_RECEIVE|C2D_MESSAGE|CALL_PHONE|CALL_PRIVILEGED|CAMERA|CAPTURE_AUDIO_OUTPUT|CAPTURE_SECURE_VIDEO_OUTPUT|CAPTURE_VIDEO_OUTPUT|CHANGE_COMPONENT_ENABLED_STATE|CHANGE_CONFIGURATION|CHANGE_NETWORK_STATE|CHANGE_WIFI_MULTICAST_STATE|CHANGE_WIFI_STATE|CLEAR_APP_CACHE|CONTROL_LOCATION_UPDATES|DELETE_CACHE_FILES|DELETE_PACKAGES|DIAGNOSTIC|DISABLE_KEYGUARD|DUMP|EXPAND_STATUS_BAR|FACTORY_TEST|GET_ACCOUNTS|GET_ACCOUNTS_PRIVILEGED|GET_PACKAGE_SIZE|GET_TASKS|GLOBAL_SEARCH|INSTALL_LOCATION_PROVIDER|INSTALL_PACKAGES|INSTALL_SHORTCUT|INSTANT_APP_FOREGROUND_SERVICE|INTERNET|KILL_BACKGROUND_PROCESSES|LOCATION_HARDWARE|MANAGE_DOCUMENTS|MANAGE_EXTERNAL_STORAGE|MANAGE_OWN_CALLS|MASTER_CLEAR|MEDIA_CONTENT_CONTROL|MODIFY_AUDIO_SETTINGS|MODIFY_PHONE_STATE|MOUNT_FORMAT_FILESYSTEMS|MOUNT_UNMOUNT_FILESYSTEMS|NFC|NFC_TRANSACTION_EVENT|PACKAGE_USAGE_STATS|PERSISTENT_ACTIVITY|PROCESS_OUTGOING_CALLS|READ_CALENDAR|READ_CALL_LOG|READ_CONTACTS|READ_EXTERNAL_STORAGE|READ_FRAME_BUFFER|READ_INPUT_STATE|READ_LOGS|READ_PHONE_NUMBER|READ_PHONE_NUMBERS|READ_PHONE_STATE|READ_SMS|READ_SYNC_SETTINGS|READ_SYNC_STATS|READ_VOICEMAIL|REBOOT|RECEIVE_BOOT_COMPLETED|RECEIVE_MMS|RECEIVE_SMS|RECEIVE_WAP_PUSH|RECORD_AUDIO|REORDER_TASKS|REQUEST_COMPANION_RUN_IN_BACKGROUND|REQUEST_COMPANION_USE_DATA_IN_BACKGROUND|REQUEST_DELETE_PACKAGES|REQUEST_IGNORE_BATTERY_OPTIMIZATIONS|REQUEST_INSTALL_PACKAGES|RESTART_PACKAGES|SEND_RESPOND_VIA_MESSAGE|SEND_SMS|SET_ALARM|SET_ALWAYS_FINISH|SET_ANIMATION_SCALE|SET_DEBUG_APP|SET_PREFERRED_APPLICATIONS|SET_PROCESS_LIMIT|SET_TIME|SET_TIME_ZONE|SET_WALLPAPER|SET_WALLPAPER_HINTS|SIGNAL_PERSISTENT_PROCESSES|STATUS_BAR|SYSTEM_ALERT_WINDOW|TRANSMIT_IR|UNINSTALL_SHORTCUT|UPDATE_DEVICE_STATS|USE_FINGERPRINT|USE_SIP|VIBRATE|WAKE_LOCK|WRITE_APN_SETTINGS|WRITE_CALENDAR|WRITE_CALL_LOG|WRITE_CONTACTS|WRITE_EXTERNAL_STORAGE|WRITE_GSERVICES|WRITE_SECURE_SETTINGS|WRITE_SETTINGS|WRITE_SYNC_SETTINGS|WRITE_VOICEMAIL" initialValue="ACCESS_NETWORK_STATE||ACCESS_WIFI_STATE||CHANGE_NETWORK_STATE||INSTALL_SHORTCUT||INTERNET||MOUNT_FORMAT_FILESYSTEMS||READ_LOGS" isDefaultInherited="false" isHidden="false" label="Permissions" name="permissions" readOnly="false" type="MULTIPLEBOOLEAN"/>
       <DynamicProperty description="Requirements" editorInfo="title:Requirements;description:iOS Requirements;icon:checkbox_checked;contains:accelerometer|auto-focus-camera|armv6|armv7|bluetooth-le|camera-flash|front-facing-camera|gamekit|gps|gyroscope|healthkit|magnetometer|metal|microphone|location-services|opengles-1|opengles-2|opengles-3|peer-peer|sms|still-camera|telephony|video-camera|wifi" initialValue="wifi" isDefaultInherited="false" isHidden="true" label="Requirements" name="required" readOnly="false" type="MULTIPLEBOOLEAN"/>
       <DynamicProperty description="Manifest resources" initialValue="" isDefaultInherited="false" isHidden="false" label="Resources" name="resources" readOnly="false" type="TEXT"/>
       <DynamicProperty description="High-DPI Status Icon (36x36 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Status Icon-hdpi (36x36 px)" name="status-icon-hdpi" readOnly="false" type="FILE"/>
@@ -67,7 +67,7 @@
   </Settings>
   <LanguageList version="1.0"/>
   <PlatformList version="1.0"/>
-  <Group environment="dirlist:POI_HOME_3_10=/Applications/java/poi-3.10.1,dir:POI_HOME_4_1_0=/Applications/java/poi-4.1.0,dir:POI_HOME=/Applications/java/poi-5.1.0,filelist:CLASSPATH_4_1_0=$(POI_HOME)/poi-4.1.0.jar;$(POI_HOME)/poi-ooxml-4.1.0.jar;$(POI_HOME)/poi-ooxml-schemas-4.1.0.jar;$(POI_HOME)/ooxml-lib/curvesapi-1.06.jar;$(POI_HOME)/ooxml-lib/xmlbeans-3.1.0.jar;$(POI_HOME)/lib/commons-collections4-4.3.jar;$(POI_HOME)/lib/commons-compress-1.18.jar;$(POI_HOME)/lib/commons-math3-3.6.1.jar;$(CLASSPATH),filelist:CLASSPATH=$(POI_HOME)/poi-5.1.0.jar;$(POI_HOME)/poi-ooxml-lite-5.1.0.jar;$(POI_HOME)/poi-ooxml-5.1.0.jar;$(POI_HOME)/poi-excelant-5.1.0.jar;$(POI_HOME)/poi-ooxml-full-5.1.0.jar;$(POI_HOME)/poi-examples-5.1.0.jar;$(POI_HOME)/lib/commons-io-2.11.0.jar;$(POI_HOME)/lib/commons-collections4-4.4.jar;$(POI_HOME)/lib/log4j-api-2.14.1.jar;$(POI_HOME)/lib/commons-math3-3.6.1.jar;$(POI_HOME)/lib/commons-codec-1.15.jar;$(POI_HOME)/lib/SparseBitSet-1.2.jar;$(POI_HOME)/ooxml-lib/commons-logging-1.2.jar;$(POI_HOME)/ooxml-lib/slf4j-api-1.7.32.jar;$(POI_HOME)/ooxml-lib/commons-compress-1.21.jar;$(POI_HOME)/ooxml-lib/xmlbeans-5.0.2.jar;$(POI_HOME)/ooxml-lib/curvesapi-1.06.jar;$(POI_HOME)/poi-javadoc-5.1.0.jar;/Applications/java/apache-log4j-2.14.1-bin/log4j-core-2.14.1.jar" id="1471925802" label="fgl_apache_poi" language="Genero" targetDirectory="$(ProjectDir)">
+  <Group environment="dirlist:POI_HOME_3_10=/Applications/java/poi-3.10.1,dir:POI_HOME_4_1_0=/Applications/java/poi-4.1.0,dir:POI_HOME=/Applications/java/poi-5.1.0,filelist:CLASSPATH_4_1_0=$(POI_HOME)/poi-4.1.0.jar;$(POI_HOME)/poi-ooxml-4.1.0.jar;$(POI_HOME)/poi-ooxml-schemas-4.1.0.jar;$(POI_HOME)/ooxml-lib/curvesapi-1.06.jar;$(POI_HOME)/ooxml-lib/xmlbeans-3.1.0.jar;$(POI_HOME)/lib/commons-collections4-4.3.jar;$(POI_HOME)/lib/commons-compress-1.18.jar;$(POI_HOME)/lib/commons-math3-3.6.1.jar;$(CLASSPATH),filelist:CLASSPATH=$(POI_HOME)/poi-5.1.0.jar;$(POI_HOME)/poi-ooxml-lite-5.1.0.jar;$(POI_HOME)/poi-ooxml-5.1.0.jar;$(POI_HOME)/poi-excelant-5.1.0.jar;$(POI_HOME)/poi-ooxml-full-5.1.0.jar;$(POI_HOME)/poi-examples-5.1.0.jar;$(POI_HOME)/lib/commons-io-2.11.0.jar;$(POI_HOME)/lib/commons-collections4-4.4.jar;$(POI_HOME)/lib/log4j-api-2.14.1.jarX;$(POI_HOME)/lib/commons-math3-3.6.1.jar;$(POI_HOME)/lib/commons-codec-1.15.jar;$(POI_HOME)/lib/SparseBitSet-1.2.jar;$(POI_HOME)/ooxml-lib/commons-logging-1.2.jar;$(POI_HOME)/ooxml-lib/slf4j-api-1.7.32.jar;$(POI_HOME)/ooxml-lib/commons-compress-1.21.jar;$(POI_HOME)/ooxml-lib/xmlbeans-5.0.2.jar;$(POI_HOME)/ooxml-lib/curvesapi-1.06.jar;$(POI_HOME)/poi-javadoc-5.1.0.jar;/Applications/java/apache-log4j-2.16.0-bin/log4j-core-2.16.0.jar;/Applications/java/apache-log4j-2.16.0-bin/log4j-api-2.16.0.jar" id="1471925802" label="fgl_apache_poi" language="Genero" targetDirectory="$(ProjectDir)">
     <Group id="710725120" label="java_wrapper">
       <Library binaryName="lib_apache_poi" id="806207675" label="lib_apache_poi">
         <File filePath="fgl_excel.4gl"/>
@@ -76,39 +76,39 @@
       </Library>
     </Group>
     <Group id="2026825588" label="test_program">
-      <Application binaryName="fgl_excel_calculation" id="419929947" label="fgl_excel_calculation">
+      <Application binaryName="01_fgl_excel_test" dependencies="806207675" id="163524075" label="01_fgl_excel_test">
+        <Configuration id="-1933405794" label="fgl_excel_test"/>
+        <File filePath="fgl_excel_test.4gl"/>
+        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_excel_test.xlsx"/>
+      </Application>
+      <Application binaryName="02_fgl_word_test" id="-824915288" label="02_fgl_word_test">
+        <Configuration id="-212500090" label="fgl_word_test"/>
+        <File filePath="fgl_word_test.4gl"/>
+        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_word_test.docx"/>
+      </Application>
+      <Application binaryName="03_fgl_excel_import_test" id="989621642" label="03_fgl_excel_import_test">
+        <Configuration id="-1292441364" label="fgl_excel_import_test"/>
+        <File filePath="fgl_excel_import_test.4gl"/>
+      </Application>
+      <Application binaryName="04_fgl_excel_calculation" id="419929947" label="04_fgl_excel_calculation">
         <Configuration id="-1406302710" label="fgl_excel_calculation"/>
         <File filePath="fgl_excel_calculation_test.4gl"/>
       </Application>
-      <Application binaryName="fgl_excel_fit_to_page" id="1778958129" label="fgl_excel_fit_to_page">
-        <Configuration id="-701060086" label="fgl_excel_fit_to_page"/>
-        <File filePath="fgl_excel_fit_to_page.4gl"/>
-        <File filePath="fgl_excel_fit_to_page.xlsx"/>
-        <File filePath="fgl_excel_fit_to_page2.xlsx"/>
+      <Application binaryName="05_fgl_financial_test" id="-1141558460" label="05_fgl_financial_test">
+        <Configuration id="413242747" label="fgl_financial_test"/>
+        <File filePath="fgl_financial_test.4gl"/>
       </Application>
-      <Application binaryName="fgl_excel_generic_test" environment="value:DBDATE=DMY4/" id="1569057355" label="fgl_excel_generic_test">
+      <Application binaryName="06_fgl_excel_generic_test" environment="value:DBDATE=DMY4/" id="1569057355" label="06_fgl_excel_generic_test">
         <Configuration id="135049262" label="fgl_excel_generic_test"/>
         <File filePath="fgl_excel_generic_test.4gl"/>
         <File filePath="fgl_excel_generic_test.per"/>
         <File filePath="fgl_excel_generic_test.xlsx"/>
       </Application>
-      <Application binaryName="fgl_excel_import_test" id="989621642" label="fgl_excel_import_test">
-        <Configuration id="-1292441364" label="fgl_excel_import_test"/>
-        <File filePath="fgl_excel_import_test.4gl"/>
-      </Application>
-      <Application binaryName="fgl_excel_test" dependencies="806207675" id="163524075" label="fgl_excel_test">
-        <Configuration id="-1933405794" label="fgl_excel_test"/>
-        <File filePath="fgl_excel_test.4gl"/>
-        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_excel_test.xlsx"/>
-      </Application>
-      <Application binaryName="fgl_financial_test" id="-1141558460" label="fgl_financial_test">
-        <Configuration id="413242747" label="fgl_financial_test"/>
-        <File filePath="fgl_financial_test.4gl"/>
-      </Application>
-      <Application binaryName="fgl_word_test" id="-824915288" label="fgl_word_test">
-        <Configuration id="-212500090" label="fgl_word_test"/>
-        <File filePath="fgl_word_test.4gl"/>
-        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_word_test.docx"/>
+      <Application binaryName="07_fgl_excel_fit_to_page" id="1778958129" label="07_fgl_excel_fit_to_page">
+        <Configuration id="-701060086" label="fgl_excel_fit_to_page"/>
+        <File filePath="fgl_excel_fit_to_page.4gl"/>
+        <File filePath="fgl_excel_fit_to_page.xlsx"/>
+        <File filePath="fgl_excel_fit_to_page2.xlsx"/>
       </Application>
     </Group>
     <Group id="-1511700679" label="zz_java_test">
