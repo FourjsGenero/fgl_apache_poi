@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="-701060086" gstVersion="40100" version="3.4">
+<Project defaultApplication="-1933405794" gstVersion="40100" version="3.4">
   <Settings>
     <DynamicProperties version="4">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -102,13 +102,13 @@
         <Configuration id="135049262" label="fgl_excel_generic_test"/>
         <File filePath="fgl_excel_generic_test.4gl"/>
         <File filePath="fgl_excel_generic_test.per"/>
-        <File filePath="fgl_excel_generic_test.xlsx"/>
+        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_excel_generic_test.xlsx"/>
       </Application>
       <Application binaryName="07_fgl_excel_fit_to_page" id="1778958129" label="07_fgl_excel_fit_to_page">
         <Configuration id="-701060086" label="fgl_excel_fit_to_page"/>
         <File filePath="fgl_excel_fit_to_page.4gl"/>
-        <File filePath="fgl_excel_fit_to_page.xlsx"/>
-        <File filePath="fgl_excel_fit_to_page2.xlsx"/>
+        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_excel_fit_to_page.xlsx"/>
+        <File excludeFromCompilation="true" excludeFromLink="true" filePath="fgl_excel_fit_to_page2.xlsx"/>
       </Application>
     </Group>
     <Group id="-1511700679" label="zz_java_test">
