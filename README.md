@@ -62,6 +62,16 @@ Illustrates the use of the financial methods (NPV, IRR) etc that are available. 
 
 Illustrates how you can fit to page an existing spreadsheet.  It takes two arguments, an existing filename and a new filename, and will save the existing file using the new filename having modified it to fit to 1 page.  With the example, fgl_excel_fit_to_page.xlsx is the original, fgl_excel_fit_to_page2.xlsx has been modified to print to 1x1 page, to verify go File->Print and note the appearance in the preview.
 
+### fgl_excel_pivot
+
+Illustrates how you can create a Pivot table.  It involves two sheets, one sheet with columnar data, and the second sheet that has a pivot table added with one column assigned to columns of the pivot table, one column assigned to rows of the pivot table, and summing a third column (Qty).
+
+There is something odd with this example, this line CALL pt.getCTPivotTableDefinition().getPivotFields().getPivotFieldArray(idx).setSortType(STFieldSortType.ASCENDING) is commented out of the pivot_table_add_row and pivot_table_add_column as well as the line -- IMPORT JAVA org.openxmlformats.schemas.spreadsheetml.x2006.main.STFieldSortType.  This is because the jar lib ooxml-schemas-1.4.jar is required and that is not part of the Apache POI download.  See comments such as https://stackoverflow.com/questions/38470735/how-do-you-sort-pivot-table-data-using-the-apache-poi-library-in-java
+
+If you want to sort the columns and rows, uncomment these 3 lines and find and download the ooxml-schemas jar
+
+
+
 ## Other Notes
 
 Have a look at http://poi.apache.org/components/spreadsheet/quick-guide.html#DataFormats for examples of methods will need to add to do certain things in Excel
