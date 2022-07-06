@@ -82,6 +82,8 @@ This is because the jar lib ooxml-schemas-1.4.jar is required and that is not pa
 
 If you want to sort the columns and rows, uncomment these 3 lines and find and download the ooxml-schemas jar  (If there is a better way let me know)
 
+![Pivot Example](https://user-images.githubusercontent.com/13615993/177439323-ae769063-d01a-4de1-a634-48961a7f0737.png)
+
 
 
 ## Other Notes
