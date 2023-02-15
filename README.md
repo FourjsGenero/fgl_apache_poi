@@ -84,7 +84,13 @@ If you want to sort the columns and rows, uncomment these 3 lines and find and d
 
 ![Pivot Example](https://user-images.githubusercontent.com/13615993/177439323-ae769063-d01a-4de1-a634-48961a7f0737.png)
 
+### fgl_word_import
 
+Import and read a Word document
+
+### fgl_word_template
+
+# Open a Word tempalte and start using that to create a Word document
 
 ## Other Notes
 
