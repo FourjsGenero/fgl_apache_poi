@@ -86,7 +86,7 @@ If you want to sort the columns and rows, uncomment these 3 lines and find and d
 
 ### fgl_word_import
 
-Import and read a Word document
+Import and read a Word document (paragraphs, runs, table, table rows, table cells at this stage)
 
 ### fgl_word_template
 
