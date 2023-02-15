@@ -90,7 +90,7 @@ Import and read a Word document
 
 ### fgl_word_template
 
-# Open a Word tempalte and start using that to create a Word document
+Open a Word template file (dotx) and start using that to create a Word document.
 
 ## Other Notes
 
