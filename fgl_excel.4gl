@@ -15,7 +15,7 @@ IMPORT JAVA org.apache.poi.ss.SpreadsheetVersion
 IMPORT JAVA org.apache.poi.ss.usermodel.DataConsolidateFunction
 
 --This java entry is needed for the STFieldSortType to sort PivotTable columns/rows.  It is outside of the ApachePOI download
--- IMPORT JAVA org.openxmlformats.schemas.spreadsheetml.x2006.main.STFieldSortType
+IMPORT JAVA org.openxmlformats.schemas.spreadsheetml.x2006.main.STFieldSortType
 
 IMPORT JAVA org.apache.poi.ss.util.CellUtil
 IMPORT JAVA org.apache.poi.ss.util.CellReference
@@ -247,14 +247,14 @@ FUNCTION pivot_table_add_column(pt pivotTableType, idx INTEGER)
     CALL pt.addColLabel(idx)
 
     --This line uses STFieldSortType to sort PivotTable columns/rows.  It is outside of the ApachePOI download
-    -- CALL pt.getCTPivotTableDefinition().getPivotFields().getPivotFieldArray(idx).setSortType(STFieldSortType.ASCENDING)
+    CALL pt.getCTPivotTableDefinition().getPivotFields().getPivotFieldArray(idx).setSortType(STFieldSortType.ASCENDING)
 END FUNCTION
 
 FUNCTION pivot_table_add_row(pt pivotTableType, idx INTEGER)
     CALL pt.addRowLabel(idx)
 
     --This line uses STFieldSortType to sort PivotTable columns/rows.  It is outside of the ApachePOI download
-    -- CALL pt.getCTPivotTableDefinition().getPivotFields().getPivotFieldArray(idx).setSortType(STFieldSortType.ASCENDING)
+    CALL pt.getCTPivotTableDefinition().getPivotFields().getPivotFieldArray(idx).setSortType(STFieldSortType.ASCENDING)
 END FUNCTION
 
 -- Add variations of this function to do different operations
