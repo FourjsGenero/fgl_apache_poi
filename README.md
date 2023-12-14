@@ -13,7 +13,7 @@ You will need to download the Java Apache POI libraries from:
 
 https://poi.apache.org/
 
-In the fgl_apache_poi node, set the POI_HOME variable to where you have 
+In the fgl_apache_poi node, set the POI_HOME variable to where you have
 downloaded the Apache POI Libraries
 
 As the versions increase you may need to alter the CLASSPATH variable set
@@ -66,17 +66,17 @@ Illustrates how you can fit to page an existing spreadsheet.  It takes two argum
 
 Illustrates how you can create a Pivot table.  It creates two sheets, one sheet with columnar data in 5 columns, and the second sheet that has a pivot table added with the 3rd column assigned to rows of the pivot table, the 4th column (Months) assigned to columns of the pivot table, and a grouped sum across these two fields of the data in the 5th column (Qty).
 
-There is a quirk with this example, this line 
+There is a quirk with this example, this line:
 
 ``
 CALL pt.getCTPivotTableDefinition().getPivotFields().getPivotFieldArray(idx).setSortType(STFieldSortType.ASCENDING)
 ``
 
-is commented out of the pivot_table_add_row and pivot_table_add_column functions as well as the line 
+is commented out of the pivot_table_add_row and pivot_table_add_column functions as well as the line:
 
 ``
 -- IMPORT JAVA org.openxmlformats.schemas.spreadsheetml.x2006.main.STFieldSortType
-``  
+``
 
 This is because the jar lib ooxml-schemas-1.4.jar is required and that is not part of the Apache POI download.  See comments such as https://stackoverflow.com/questions/38470735/how-do-you-sort-pivot-table-data-using-the-apache-poi-library-in-java
 
