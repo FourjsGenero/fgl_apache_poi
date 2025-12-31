@@ -5,6 +5,7 @@ bin
 *.4pwcfg
 *.4pdb
 .DS_Store
+*.err
 fgl_excel_test.xlsx
 fgl_excel_generic_test.xlsx
 fgl_excel_fit_to_page2.xlsx
