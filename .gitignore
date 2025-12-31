@@ -5,3 +5,10 @@ bin
 *.4pwcfg
 *.4pdb
 .DS_Store
+fgl_excel_test.xlsx
+fgl_excel_generic_test.xlsx
+fgl_excel_fit_to_page2.xlsx
+fgl_excel_pivot.xlsx
+fgl_word_test.docx
+fgl_word_template_test.docx
+
